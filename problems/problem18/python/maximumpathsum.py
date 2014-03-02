@@ -18,6 +18,7 @@ def read_input( filename ):
         nodes_string = line.split()
         nodes_integer = [int(x) for x in nodes_string]
         nodes.append( nodes_integer )
+    f.close()
     return nodes
 
 def find_maximum_path( nodes ):
